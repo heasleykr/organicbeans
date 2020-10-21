@@ -1,0 +1,15 @@
+.product{
+    display: inline-block;
+    border: 1px solid navy;
+    padding: 2rem;
+    margin: .5rem;
+    background-color: white;
+}
+#addSection, #productPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#picker{
+    margin-top: 2rem;
+}

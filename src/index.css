@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background: url(https://img.okezone.com/content/2017/07/03/481/1727314/minum-kopi-hitam-cerdaskan-otak-dan-cegah-kanker-KtawRLLccT.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
 }
 
 code {
