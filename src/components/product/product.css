@@ -5,10 +5,16 @@
     margin: .5rem;
     background-color: white;
 }
+#productMain{
+    margin-top: 1.7rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #3b2503;
+}
 #addSection, #productPrice{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 2rem;
 }
 #picker{
     margin-top: 2rem;

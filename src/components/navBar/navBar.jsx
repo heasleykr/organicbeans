@@ -1,17 +1,19 @@
 import React, { Component } from "react"; //imrc short
 import "./navBar.css";
+import logoNav from "./img/logoSm.png";
 
 //cc short
 class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div id="navMain">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img src={logoNav} alt="logoNav" id="logoNav" width="50px" height="30"/>
                 <a className="navbar-brand" href="/#">Organic Beans</a>
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                  <li className="nav-item active">

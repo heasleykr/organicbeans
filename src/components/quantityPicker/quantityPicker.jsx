@@ -17,12 +17,12 @@ class QuantityPicker extends Component {
                 <button 
                     disabled={this.state.quantity === this.state.minimum}
                     onClick={this.decrease} 
-                    className="btn btn-sm btn-info"
+                    className="btn btn-sm btn-info" id="minusBtn"
                 >
                     -
                 </button>
-                <label className="quantity">{this.state.quantity}</label>
-                <button onClick={this.increase} className="btn btn-sm btn-info">+</button>
+                <label className="quantity" id="quantity">{this.state.quantity}</label>
+                <button onClick={this.increase} id="plusBtn" className="btn btn-sm btn-info">+</button>
             </div>
 
         );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import QuantityPicker from '../quantityPicker/quantityPicker';
 import "./product.css";
+import esper from "./img/esperanza.jpg";
 
 class Product extends Component{
     state = {}
@@ -9,9 +10,10 @@ class Product extends Component{
         return (
             <React.Fragment>
                 <div className="product">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKxo_NrEOlZevgaMclEwJQ70OU6fzPkeds6Q&usqp=CAU" alt=""/>
+                    <img src={esper} alt="" width="200px" height="200px"/>
                     <div id="productMain">
-                        <h1>Title</h1>
+                        <h1>Esperanza</h1>
+                        <h3>Spin Coffee Company</h3>
                     </div>
                     <div id="productPrice">
                         <h5>Total: $999</h5>
