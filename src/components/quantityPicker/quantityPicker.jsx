@@ -7,12 +7,11 @@ class QuantityPicker extends Component {
     // Object literal for imformation on Component
     state = {
         quantity: 1,
-        minimum: 1
+        minimum: this.props.minimum,
     }
 
     render() { 
         return (
-
             <div>
                 <button 
                     disabled={this.state.quantity === this.state.minimum}
@@ -39,6 +38,8 @@ class QuantityPicker extends Component {
         val += 1; 
         //3) Send back to state to update
         this.setState({ quantity: val }); 
+        // notify Parent on change
+        this.props.onValueChange(val);
     }
 
     //function onClick '-' button
@@ -54,6 +55,8 @@ class QuantityPicker extends Component {
             val -= 1; 
             //3) Send back to state to update
             this.setState({ quantity: val }); 
+            //Notify parent on change
+            this.props.onValueChange(val);
         } 
     }
 }
