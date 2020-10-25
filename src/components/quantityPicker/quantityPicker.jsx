@@ -6,7 +6,7 @@ class QuantityPicker extends Component {
 
     // Object literal for imformation on Component
     state = {
-        quantity: 1,
+        quantity: this.props.minimum, //get the minimum from the data!! 
         minimum: this.props.minimum,
     }
 

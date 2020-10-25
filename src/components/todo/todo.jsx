@@ -36,9 +36,16 @@ class Todo extends Component {
     }
 
     handleOnClick = (e) => {
+
+        // Okay, but DONT modify the state directly 
         console.log(this.state.todoText);
-        this.state.todos.push(this.state.todoText);
-        this.setState({todoText:  ""});
+        // this.state.todos.push(this.state.todoText);
+        // this.setState({todoText:  ""});
+
+        var list = [...this.state.todos]; // CLONE the list
+        list.push(this.state.todoText); 
+        this.setState({ todos: list, todoText: ""}); //Now update with new list and text
+        
     } 
 }
  

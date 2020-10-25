@@ -5,6 +5,7 @@ import Footer from "./components/footer/footer";
 import Catalog from "./components/catalog/catalog";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 import Todo from "./components/todo/todo";
 
 function App() {

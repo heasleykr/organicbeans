@@ -17,7 +17,7 @@ class Product extends Component{
                         <h3>{this.props.data.category}</h3>
                     </div>
                     <div id="productPrice">
-                        <h5>Total: ${this.props.data.price * this.state.amount}</h5>
+                        <h5>Total: ${this.getTotal()}</h5>
                         <h5>Price: ${this.props.data.price}</h5>
                     </div>
                     <div id="addSection">
@@ -31,11 +31,18 @@ class Product extends Component{
         );
     }
 
+    getTotal = () => {
+        let total = this.props.data.price * this.state.quantity;
+        return total.toFixed(2);
+    }
+
     //Function when QuantitiPicker notifies us that there's a change....
     handleQuantityChange = (quantity) =>  {
         console.log("Quantity changed ", quantity);
         this.setState({amount: quantity});
     };
 }
+
+
 
 export default Product;
