@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background: url(https://img.okezone.com/content/2017/07/03/481/1727314/minum-kopi-hitam-cerdaskan-otak-dan-cegah-kanker-KtawRLLccT.jpg) no-repeat center center fixed; 
+    background: url("./chef.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,4 +14,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#quote{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  color: white;
+  border-bottom: 2px solid white;
+}
+#quoteMain{
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #d47e1b;
+  margin-right: 1rem;
+  filter: drop-shadow(2px 2px 2px #111010);
+}
+#quoteSub{
+  color: #a83434;
+  margin-top: 1.5rem;
+  filter: drop-shadow(2px 2px 2px #111010);
+}
+#catalogDis{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  margin-top: 20rem;
+  background-color: white;
 }

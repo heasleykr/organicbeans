@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import "./todo.css";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {fasCarrot} from '@font-awesome/free-solid-svg-icons';
+// const carrot = <FontAwesomeIcon icon={fasCarrot} />
 
 class Todo extends Component {
     state = { 
@@ -7,19 +11,9 @@ class Todo extends Component {
      }
     render() { 
         return ( 
-            <div>
-                <h5>Simple todo app</h5>
-
-                {/* 
-
-                      prints list ul/li
-
-                      push to array
-
-                      render array using map function 
-                
-                */}
-
+            <div id="todoHead">
+                <h5 id="todoTitle">Green Reminders Here.</h5>
+                <h5 id="todoMessage">What's on your mind?</h5>
                 <div>
                     <input type="text" 
                     value={this.state.todoText}
@@ -28,7 +22,7 @@ class Todo extends Component {
                     <button onClick={this.handleOnClick}>Add</button>
                 </div>
 
-                <div>
+                <div id="todoSec">
                     <ul>
                         {this.state.todos.map((d) => <li key={d}>{d}</li>)}
                     </ul>

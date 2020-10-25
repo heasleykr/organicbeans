@@ -13,7 +13,7 @@ class NavBar extends Component {
                 <span className="navbar-toggler-icon"></span>
                 </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <img src={logoNav} alt="logoNav" id="logoNav" width="50px" height="30"/>
+                <img src={logoNav} alt="logoNav" id="logoNav" width="70px" height="50"/>
                 <a className="navbar-brand" href="/#">Organic Beans</a>
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                  <li className="nav-item active">
@@ -27,7 +27,7 @@ class NavBar extends Component {
                 </li>
                 </ul>
             <form className="form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+              <input id="search" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>

@@ -11,7 +11,7 @@ class Product extends Component{
         return (
             <React.Fragment>
                 <div className="product">
-                    <img src={"/products/" + this.props.data.image} alt="" width="200px" height="200px"/>
+                    <img src={"/images/products/" + this.props.data.image} id="foodImg" alt="" width="200px" height="200px"></img>
                     <div id="productMain">
                         <h1>{this.props.data.title}</h1>
                         <h3>{this.props.data.category}</h3>

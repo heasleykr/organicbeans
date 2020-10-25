@@ -13,7 +13,13 @@ function App() {
       <NavBar></NavBar>
 
       <div className="container">
-        {/*<Catalog></Catalog>*/}
+        <div id="quote">
+          <h1 id="quoteMain">Shop Organic</h1>
+          <h1 id="quoteSub">Eat Organic. Live Organic.</h1>
+        </div>
+        <div id="catalogDis">
+          <Catalog></Catalog>
+        </div>
 
         <hr></hr>
         <Todo></Todo>
