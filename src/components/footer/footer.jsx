@@ -11,10 +11,6 @@ class Footer extends Component {
             <div id="footerMain">
                 <div id="logoMain">
                     <img src={logo} alt="logo" id="logo" width="180px" height="120px"/>
-                    {/* <div id="companyName">
-                        <h3>Organic</h3>
-                        <h3>Beans</h3>
-                    </div> */}
                 </div>
                 <div id="message">
                     <h3 id="footerQ">Seasonable. Sustainable. Savorable.</h3>

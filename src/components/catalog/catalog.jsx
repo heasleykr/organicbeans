@@ -3,11 +3,6 @@ import Product from '../product/product';
 import "./catalog.css";
 import ProductService from '../../services/productService';
 
-// var veggie = 
-// var fruit = 
-// var drink = 
-// var dairy = 
-
 
 class Catalog extends Component{
 
@@ -17,7 +12,7 @@ class Catalog extends Component{
         selectedCategory: ''
     };
     
-    //For each product in the array of data, return a Product!
+    //For each product in the array of data, returns a Product!
     /* 
         - When you render a Component, they need to have a unique key for React to work with. p.id for key
         - Send data to the Product Obj/Component to display 'data={p}'
@@ -37,27 +32,31 @@ class Catalog extends Component{
 
         return (
             <div className="catalog-page">
-                
                 <div className="catagories">
+                <div className="searchCategories">
+                    <h4 className="shopLabel">Shop By</h4>
+                    <h2 id="catTitle" className="categoryTitle"><b>Categories</b></h2>
+                </div>
 
-                
-                <h2 id="categoryTitle">Produce Categories:</h2>
+                <div id="buttons">
+                    <button 
+                        onClick={() => this.selectCategory('')}
+                        key = {''}
+                        id="buttonAll">All Products
+                    </button>
 
-                <button 
-                    onClick={() => this.selectCategory('')}
-                    key = {''}
-                    className="catBtn">All Products
-                </button>
-
-
-                    { this.state.catagories.map((c) => 
-                        <button 
-                            onClick={() => this.selectCategory(c)}
-                            id="buttonC" className="catBtn">{c}
-                        </button>)}
+                        { this.state.catagories.map((c) => 
+                            <button 
+                                onClick={() => this.selectCategory(c)}id="buttonC">{c}
+                            </button>)}
+                </div>
                 </div>
 
                 <div>
+                    <div className="searchCategories">
+                        <h4 className="shopLabel">Shop By</h4>
+                        <h3 className="categoryTitle">Featured Products</h3>
+                    </div>
                     {prodsToDisplay.map((p) => <Product data={p} key={p.id}></Product>)} 
                 </div>
             </div>
@@ -98,12 +97,14 @@ class Catalog extends Component{
             }
         }
 
-        // HOMEWORK TODO   SORT CATEGORY ARRAY AND SET STATE
-        catagories = catagories.sort(() => {});
+        //Sort Category array alphabeticall and set state
+        catagories = catagories.sort();
 
         console.log(catagories);
 
-        this.setState({catagories: catagories}); //Set actual Category array
+        //Set actual Category array
+        this.setState({catagories: catagories}); 
+        
     }
 }
 

@@ -3,6 +3,10 @@
     padding-bottom: 2rem;
     height: 10rem;
 }
+#companyHome{
+    margin-top: 1rem;
+    color: #4ea84b;
+}
 #logoNav{
     margin-top: .3rem;
     margin-right: .5rem;
@@ -13,6 +17,7 @@
     font-weight: bold;
     color: navy;
 }
-#search{
-    margin-top: .4rem;
+#searchI{
+    margin-top: .1rem;
+
 }

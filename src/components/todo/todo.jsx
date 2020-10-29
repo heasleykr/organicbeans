@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import "./todo.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {fasCarrot} from '@font-awesome/free-solid-svg-icons';
-// const carrot = <FontAwesomeIcon icon={fasCarrot} />
 
 class Todo extends Component {
     state = { 
@@ -15,7 +12,7 @@ class Todo extends Component {
                 <h5 id="todoTitle">Green Reminders Here.</h5>
                 <h5 id="todoMessage">What's on your mind?</h5>
                 <div>
-                    <input type="text" 
+                    <input id="inputTask" type="text" 
                     value={this.state.todoText}
                     onChange={this.handleTextChange} 
                     placeholder="Todo Task"/>
@@ -36,11 +33,6 @@ class Todo extends Component {
     }
 
     handleOnClick = (e) => {
-
-        // Okay, but DONT modify the state directly 
-        console.log(this.state.todoText);
-        // this.state.todos.push(this.state.todoText);
-        // this.setState({todoText:  ""});
 
         var list = [...this.state.todos]; // CLONE the list
         list.push(this.state.todoText); 

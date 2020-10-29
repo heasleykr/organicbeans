@@ -4,6 +4,23 @@
     padding: 2rem;
     margin: .5rem;
     background-color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#productIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#sale{
+    background-color: #d47e1b;
+    color: white;
+    padding: .3rem;
+    border-radius: 25px;
+}
+#love{
+    margin-left: 9rem;
+    font-size: 2rem;
+    color: red;
 }
 #productMain{
     margin-top: 1.7rem;
@@ -18,4 +35,16 @@
 }
 #picker{
     margin-top: 2rem;
+}
+.fa-shopping-cart{
+    color: white;
+}
+#shoppingCart{
+    color: #4ea84b;
+    padding: 1rem;
+    font-size: 2rem;
+}
+#shoppingCart:hover{
+    cursor: pointer;
+    border: 1px solid black;
 }

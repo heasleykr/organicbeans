@@ -7,7 +7,6 @@
 #todoTitle{
     color: #4ea84b;
     font-size: 3rem;
-    /* padding-bottom: 1rem; */
 }
 #todoMessage{
     font-size: 1rem;
@@ -23,6 +22,9 @@ input{
     margin-right: .5rem;
     filter: drop-shadow(1px 1px 1px #d47e1b);
 }
+#inputTask{
+    margin-bottom: 2rem;
+}
 li{
     display: flex;
     flex-direction: row;
@@ -30,7 +32,4 @@ li{
     padding-top: 1rem;
     padding-left: 1rem;
     border-bottom: 1px solid #dedede;
-}
-i{
-    color: red;
 }

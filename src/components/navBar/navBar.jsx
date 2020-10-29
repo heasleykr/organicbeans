@@ -14,7 +14,7 @@ class NavBar extends Component {
                 </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <img src={logoNav} alt="logoNav" id="logoNav" width="70px" height="50"/>
-                <a className="navbar-brand" href="/#">Organic Beans</a>
+                <a id="companyHome" className="navbar-brand" href="/#">Organic Beans</a>
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                  <li className="nav-item active">
                 <a className="nav-link" href="/#">Home <span className="sr-only">(current)</span></a>
@@ -27,7 +27,7 @@ class NavBar extends Component {
                 </li>
                 </ul>
             <form className="form-inline my-2 my-lg-0">
-              <input id="search" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+              <input id="searchI" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
@@ -38,5 +38,4 @@ class NavBar extends Component {
   }
 }
 
-//This might be an error!
 export default NavBar;
